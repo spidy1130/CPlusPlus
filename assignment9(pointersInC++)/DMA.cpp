@@ -12,6 +12,10 @@ class Complex
         {
             cout<<"a "<<a<<"\nb "<<b<<endl;
         }
+        ~Complex()
+        {
+            delete(this);
+        }
 };
 void input(Complex *ptr)
 {
@@ -20,6 +24,7 @@ void input(Complex *ptr)
     cout<<"enter two values: ";
     cin>>*a>>*b;
     ptr->setV(*a,*b);
+    delete(a,b);
 
 }
 int main()
