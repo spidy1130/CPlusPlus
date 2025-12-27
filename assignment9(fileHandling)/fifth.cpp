@@ -5,7 +5,7 @@ int main()
 {
     ofstream fout;
     string line;
-    fout.open("sec.txt",ios::app|ios::in|ios::out);
+    fout.open("third.txt",ios::app|ios::in|ios::out);
     if(!fout)
     {
         cout<<"not created\n";
@@ -23,7 +23,7 @@ int main()
     }
     fout.close();
     ifstream fin;
-    fin.open("sec.txt");
+    fin.open("third.txt");
     while(!fin.eof())
     {
         getline(fin,line);
