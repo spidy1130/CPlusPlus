@@ -21,9 +21,20 @@ class Rectangle:public Shape
             cout<<"area of rectangle :\n";
         }
 };
+class Object:public Triangle,public Rectangle
+{
+    public:
+        void area()
+        {
+            Triangle::area();
+            Rectangle::area();
+        }
+};
 int main()
 {
     Triangle t;
     t.area();
+    Object o;
+    o.area();
     return 0;
 }
