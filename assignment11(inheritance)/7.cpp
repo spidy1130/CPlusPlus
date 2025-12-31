@@ -13,6 +13,14 @@ class Triangle:public Shape
         cout<<"area of triangle:\n";
     }
 };
+class Rectangle:public Shape
+{
+    public:
+        void area()
+        {
+            cout<<"area of rectangle :\n";
+        }
+};
 int main()
 {
     Triangle t;
